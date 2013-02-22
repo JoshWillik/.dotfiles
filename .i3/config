@@ -163,3 +163,10 @@ bindsym $f+o exec opera
 bindsym $f+f exec firefox
 bindsym $f+m exec midori
 bindsym $f+x exec xfe
+bindsym $f+l exec libreoffice
+bindsym $f+n exec thunar
+bindsym $f+g exec gnome-terminal
+
+#color
+client.focused 		#00b454 #006a31 #ab0085 #960400
+client.focused_inactive #54ba60 #428b4b #d535b2 #6f3a3a

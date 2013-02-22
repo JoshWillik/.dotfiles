@@ -13,4 +13,6 @@ compinit
 # End of lines added by compinstall
 
 #User stuff
-
+autoload -U promptinit
+promptinit
+prompt walters
