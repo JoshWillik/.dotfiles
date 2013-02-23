@@ -23,3 +23,6 @@ colo evening
 else
 colo softly
 end
+
+"turn support for filetype specific plugins on
+filetype plugin on
