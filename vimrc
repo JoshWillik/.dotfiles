@@ -1,9 +1,11 @@
+"must be first line apparently
+set nocompatible
+
 "set the minimum height to something reasonable
 set winheight=10
 set winminheight=4
 
-"correct background color
-set background=dark
+set bg=light
 
 "color syntax
 syntax on
@@ -16,13 +18,40 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set softtabstop=4
 
-"set default theme depending on term or GUI
-if has('gui_running')
+"setting preferred color scheme
 colo evening
-else
-colo softly
-end
 
-"turn support for filetype specific plugins on
+"turn support for file-type specific plug-ins on
 filetype plugin on
+
+"no swp files...
+set nobackup
+
+"default 20, want more
+set history=500
+
+"check spelling
+set spell
+
+"match brackets
+set showmatch
+
+"search as I type
+set incsearch
+
+"better completion menu
+set wildmenu
+
+"code folding
+set foldenable
+
+"remap leader key to be more convenient
+let mapleader=","
+
+"leader shortcuts
+map <Leader>a othis is an inserted line<Esc>
+
+"show the leader key
+set showcm
