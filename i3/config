@@ -167,6 +167,18 @@ bindsym $f+l exec libreoffice
 bindsym $f+n exec thunar
 bindsym $f+g exec gnome-terminal
 
+#add automatic workspace remenbering for switching
+workspace_auto_back_and_forth yes
+
+#workspaces fix eventually
+#workspace 1 web
+#workspace 2 code
+#workspace 3 chat
+#workspace 4 music
+#workspace 5 misc
+
 #color
 client.focused 		#00b454 #006a31 #ab0085 #960400
 client.focused_inactive #54ba60 #428b4b #d535b2 #6f3a3a
+#
+

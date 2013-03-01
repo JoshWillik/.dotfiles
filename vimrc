@@ -54,4 +54,7 @@ let mapleader=","
 map <Leader>a othis is an inserted line<Esc>
 
 "show the leader key
-set showcm
+set showcmd
+
+"tabs for Makefile
+autocmd FileType make setlocal noexpandtab
