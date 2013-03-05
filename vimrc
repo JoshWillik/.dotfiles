@@ -52,9 +52,20 @@ let mapleader=","
 
 "leader shortcuts
 map <Leader>a othis is an inserted line<Esc>
+map <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
+map <Leader>a othis is an inserted line<Esc>
+map <Leader>a othis is an inserted line<Esc>
+map <Leader>a othis is an inserted line<Esc>
+map <Leader>a othis is an inserted line<Esc>
 
 "show the leader key
 set showcmd
 
 "tabs for Makefile
 autocmd FileType make setlocal noexpandtab
+
+"C shortcuts
+ab cic #include <stdio.h>
+ab cis #include <string.h>
+ab cia #include <assert.h>
+ab cil #include <stdlib.h>
