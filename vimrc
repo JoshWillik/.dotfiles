@@ -69,3 +69,14 @@ ab cic #include <stdio.h>
 ab cis #include <string.h>
 ab cia #include <assert.h>
 ab cil #include <stdlib.h>
+ab cie #include <errno.h>`
+ab de  #define
+ab s struct
+"the first argument of a function is often a struct
+ab (s (struct 
+ab v void
+ab ii int i = 0;
+ab im int main(int argc, char *argv[])
+
+"coloring tweak
+hi Constant ctermfg=green
