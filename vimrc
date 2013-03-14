@@ -69,7 +69,8 @@ ab cic #include <stdio.h>
 ab cis #include <string.h>
 ab cia #include <assert.h>
 ab cil #include <stdlib.h>
-ab cie #include <errno.h>`
+ab cie #include <errno.h>
+ab cig #include <gtk/gtk.h>
 ab de  #define
 ab s struct
 "the first argument of a function is often a struct
