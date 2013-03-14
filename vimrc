@@ -1,11 +1,9 @@
-"must be first line apparently
 set nocompatible
+"must be first line apparently
 
 "set the minimum height to something reasonable
 set winheight=10
 set winminheight=4
-
-set bg=light
 
 "color syntax
 syntax on
@@ -21,7 +19,11 @@ set expandtab
 set softtabstop=4
 
 "setting preferred color scheme
-colo evening
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
+colo zenburn
 
 "turn support for file-type specific plug-ins on
 filetype plugin on
@@ -51,12 +53,7 @@ set foldenable
 let mapleader=","
 
 "leader shortcuts
-map <Leader>a othis is an inserted line<Esc>
 map <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
-map <Leader>a othis is an inserted line<Esc>
-map <Leader>a othis is an inserted line<Esc>
-map <Leader>a othis is an inserted line<Esc>
-map <Leader>a othis is an inserted line<Esc>
 
 "show the leader key
 set showcmd
@@ -71,8 +68,11 @@ ab cia #include <assert.h>
 ab cil #include <stdlib.h>
 ab cie #include <errno.h>
 ab cig #include <gtk/gtk.h>
+ab cie #include <errno.h>`
+ab ci #include
 ab de  #define
 ab s struct
+
 "the first argument of a function is often a struct
 ab (s (struct 
 ab v void
@@ -81,3 +81,12 @@ ab im int main(int argc, char *argv[])
 
 "coloring tweak
 hi Constant ctermfg=green
+
+"split window resizing
+noremap + <C-W>+
+noremap - <C-W>-
+
+"faster exit from insert mode
+inoremap jj <Esc>
+
+"testing
