@@ -17,3 +17,12 @@ compinit
 autoload -U promptinit
 promptinit
 prompt adam2 cyan blue green white
+
+#Aliases
+alias cur="~/Coding/HTML/Projects/Gateway"
+alias table="~/Coding/Tabletop"
+alias timeless="~/Coding/openGL/Timeless"
+alias code="~/Coding"
+alias web="~/Coding/HTML/Projects"
+alias C="~/Coding/C/C"
+alias ednew="~/.new"
