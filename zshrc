@@ -16,4 +16,4 @@ compinit
 #User stuff
 autoload -U promptinit
 promptinit
-prompt adam2 cyan blue green black
+prompt adam2 cyan blue green white
