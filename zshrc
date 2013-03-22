@@ -26,3 +26,9 @@ alias code="~/Coding"
 alias web="~/Coding/HTML/Projects"
 alias C="~/Coding/C/C"
 alias ednew="~/.new"
+
+#adding custom scripts for easy usage
+path+="$HOME/scripts"
+
+#filter out non-existing paths
+path=($^path(N))
