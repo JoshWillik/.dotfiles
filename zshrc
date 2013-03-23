@@ -36,4 +36,3 @@ path+="$HOME/scripts"
 
 #filter out non-existing paths
 path=($^path(N))
->>>>>>> origin/master
