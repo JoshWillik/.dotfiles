@@ -16,4 +16,7 @@ compinit
 #User stuff
 autoload -U promptinit
 promptinit
-prompt adam2 cyan blue green black
+prompt adam2 cyan blue green white
+
+alias nd="sudo mount 192.168.0.10:/mnt/data /mnt/data"
+alias und="sudo umount /mnt/data"
