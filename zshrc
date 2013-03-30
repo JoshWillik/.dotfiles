@@ -27,6 +27,10 @@ alias web="~/Coding/HTML/Projects"
 alias C="~/Coding/C/C"
 alias ednew="~/.new"
 
+#for laptop
+alias nd="sudo mount 192.168.0.10:/mnt/data /mnt/data"
+alias und="sudo umount /mnt/data"
+
 #adding custom scripts for easy usage
 path+="$HOME/scripts"
 
