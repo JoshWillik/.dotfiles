@@ -167,7 +167,7 @@ bindsym $f+l exec libreoffice
 bindsym $f+n exec thunar
 bindsym $f+g exec gimp
 bindsym $f+z exec filezilla
-bindsym $f+s exec steam
+bindsym $f+s exec subl
 
 #add automatic workspace remenbering for switching
 workspace_auto_back_and_forth yes
