@@ -168,6 +168,7 @@ bindsym $f+n exec thunar
 bindsym $f+g exec gimp
 bindsym $f+z exec filezilla
 bindsym $f+s exec subl
+bindsym $k+s exec konversation
 
 #add automatic workspace remenbering for switching
 workspace_auto_back_and_forth yes

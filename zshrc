@@ -24,6 +24,7 @@ alias table="~/Coding/Tabletop"
 alias timeless="~/Coding/openGL/Timeless"
 alias code="~/Coding"
 alias web="~/Coding/HTML/Projects"
+alias pac="~/Coding/HTML/Projects/Resume/new"
 alias C="~/Coding/C/C"
 alias ednew="~/.new"
 
