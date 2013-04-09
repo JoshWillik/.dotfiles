@@ -82,10 +82,8 @@ noremap + <C-W>+
 noremap - <C-W>-
 
 "faster exit from insert mode
-<<<<<<< HEAD
 inoremap jj <Esc>
-=======
-inoremap jk <Esc>
 
-"testing
->>>>>>> origin/master
+"disable *#@(*ing bell
+"visual bell
+set vb
