@@ -85,7 +85,7 @@ bindsym $m+space focus mode_toggle
 bindsym $m+a focus parent
 
 # focus the child container
-#bindsym $m+d focus child
+#bindsym $m+c focus child
 
 # switch to workspace
 bindsym $m+1 workspace 1
@@ -167,6 +167,8 @@ bindsym $f+l exec libreoffice
 bindsym $f+n exec thunar
 bindsym $f+g exec gimp
 bindsym $f+z exec filezilla
+bindsym $f+s exec subl
+bindsym $k+s exec konversation
 
 #add automatic workspace remenbering for switching
 workspace_auto_back_and_forth yes

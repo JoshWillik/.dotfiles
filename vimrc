@@ -71,11 +71,6 @@ ab cig #include <gtk/gtk.h>
 ab cie #include <errno.h>`
 ab ci #include
 ab de  #define
-ab s struct
-
-"the first argument of a function is often a struct
-ab (s (struct 
-ab v void
 ab ii int i = 0;
 ab im int main(int argc, char *argv[])
 
@@ -87,4 +82,10 @@ noremap + <C-W>+
 noremap - <C-W>-
 
 "faster exit from insert mode
+<<<<<<< HEAD
 inoremap jj <Esc>
+=======
+inoremap jk <Esc>
+
+"testing
+>>>>>>> origin/master
