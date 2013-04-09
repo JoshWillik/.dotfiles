@@ -41,4 +41,4 @@ path+="$HOME/scripts"
 path+="$HOME/.gem/ruby/1.9.1/bin"
 
 #filter out non-existing paths
-path=($^path(N)
+path=($^path(N))
