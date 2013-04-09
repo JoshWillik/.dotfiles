@@ -88,5 +88,3 @@ noremap - <C-W>-
 
 "faster exit from insert mode
 inoremap jj <Esc>
-
-"testing
