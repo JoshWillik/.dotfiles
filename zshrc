@@ -27,10 +27,13 @@ alias web="~/Coding/HTML/Projects"
 alias pac="~/Coding/HTML/Projects/Resume/new"
 alias C="~/Coding/C/C"
 alias ednew="~/.new"
+alias gopen="gnome-terminal &"
+alias pacbig="pacman -Qi|awk '/^Installed Size/{print int($4), name} /^Name/{name=$3}'|sort -n"
+alias -g webconf='/etc/httpd/conf/httpd.conf'
 
 #for laptop
-alias nd="sudo mount 192.168.0.10:/mnt/data /mnt/data"
-alias und="sudo umount /mnt/data"
+alias -g nd="mount 192.168.0.10:/mnt/data /mnt/data"
+alias -g und="umount /mnt/data"
 alias nethome="ssh -p 10042 josh@dhcp-0-18-e7-e2-d4-73.cpe.mountaincable.net"
 alias xnethome="ssh -X -p 10042 josh@dhcp-0-18-e7-e2-d4-73.cpe.mountaincable.net"
 alias netdown="ssh -p 10042 josh@192.168.0.10"
@@ -39,6 +42,15 @@ alias xnetdown="ssh -X -p 10042 josh@192.168.0.10"
 #adding custom scripts for easy usage
 path+="$HOME/scripts"
 path+="$HOME/.gem/ruby/1.9.1/bin"
+path+="$HOME/node_modules/.bin"
 
 #filter out non-existing paths
 path=($^path(N))
+
+#FUNCTIONS
+mkgo(){
+    mkdir $1 && cd $1
+}
+
+#extra env variables
+export WEBSRV=/srv/http

@@ -148,13 +148,13 @@ bindsym $m+r mode "resize"
 # finds out, if available)
 bar {
 	position bottom
-        status_command i3status
+    status_command i3status
 	tray_output none
 }
 bar {
 	position top
-	mode hide
 	modifier $f 
+    mode hide
 	tray_output primary
 }
 
@@ -186,6 +186,7 @@ client.focused_inactive #54ba60 #428b4b #d535b2 #6f3a3a
 
 #printscreen
 bindsym Print exec gnome-screenshot
+bindsym Shift+Print exec gnome-screenshot -ac
 
 #force Timeless game to start foating
 for_window [class="Timeless" ] floating enable

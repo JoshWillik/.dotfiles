@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/usr/local/apache2/conf'
 let g:netrw_dirhist_2='/home/josh/.i3'
 let g:netrw_dirhist_3='/home/josh/.vim'
 let g:netrw_dirhist_4='/mnt/data/Dropbox/Coding/HTML/Projects/Resume/new/css'
+let g:netrw_dirhist_5='/home/josh/.new/web/project/TODO'
