@@ -19,7 +19,7 @@ promptinit
 prompt adam2 cyan blue green white
 
 #Aliases
-alias cur="~/Coding/HTML/Projects/Gateway"
+alias -g cur="~/Coding/HTML/Projects/Gateway"
 alias table="~/Coding/Tabletop"
 alias timeless="~/Coding/openGL/Timeless"
 alias code="~/Coding"
@@ -30,6 +30,8 @@ alias ednew="~/.new"
 alias gopen="gnome-terminal &"
 alias pacbig="pacman -Qi|awk '/^Installed Size/{print int($4), name} /^Name/{name=$3}'|sort -n"
 alias -g webconf='/etc/httpd/conf/httpd.conf'
+alias -g packer="packer-color"
+alias perli="perl -d -e 1"
 
 #for laptop
 alias -g nd="mount 192.168.0.10:/mnt/data /mnt/data"

@@ -48,18 +48,24 @@ set wildmenu
 
 "code folding
 set foldenable
+set foldmethod=indent
 
 "remap leader key to be more convenient
 let mapleader=","
 
 "leader shortcuts
-map <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
+noremap <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
+noremap <Leader>r :source $MYVIMRC<CR>
+noremap <Leader>e :sp $MYVIMRC<CR>
 
 "show the leader key
 set showcmd
 
 "tabs for Makefile
 autocmd FileType make setlocal noexpandtab
+
+"auto expanding brackets for css
+autocmd Filetype html,css inoremap {<CR> {<Esc>o}<Esc>O
 
 "C shortcuts
 ab cic #include <stdio.h>
@@ -81,8 +87,13 @@ hi Constant ctermfg=green
 noremap + <C-W>+
 noremap - <C-W>-
 
+"better folding
+nnoremap <Space> za
+
 "faster exit from insert mode
 inoremap jj <Esc>
+"also forces me not to type several lines in one go...
+inoremap <CR> <Esc>
 
 "disable *#@(*ing bell
 "visual bell
