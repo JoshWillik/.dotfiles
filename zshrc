@@ -16,7 +16,7 @@ compinit
 #User stuff
 autoload -U promptinit
 promptinit
-prompt adam2 cyan blue green white
+prompt adam2 cyan red green white
 
 #Aliases
 alias -g cur="~/Coding/HTML/Projects/Gateway"
