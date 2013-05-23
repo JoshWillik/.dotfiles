@@ -25,7 +25,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $m
 
 # start a terminal
-bindsym $m+Return exec roxterm
+bindsym $m+Return exec terminator
 
 # kill focused window
 bindsym $m+Shift+q kill
@@ -168,7 +168,8 @@ bindsym $f+n exec thunar
 bindsym $f+g exec gimp
 bindsym $f+z exec filezilla
 bindsym $f+s exec subl
-bindsym $k+s exec konversation
+bindsym $f+k exec konversation
+bindsym $f+a exec firefox-aurora
 
 #add automatic workspace remenbering for switching
 workspace_auto_back_and_forth yes
@@ -181,7 +182,7 @@ workspace_auto_back_and_forth yes
 #workspace 5 misc
 
 #color
-client.focused 		#00b454 #006a31 #ab0085 #960400
+client.focused 		#00AAAA #444444 #FFFFFF #00FFFF
 client.focused_inactive #54ba60 #428b4b #d535b2 #6f3a3a
 
 #printscreen
