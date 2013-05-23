@@ -20,18 +20,21 @@ prompt adam2 cyan red green white
 
 #Aliases
 alias -g cur="~/Coding/HTML/Projects/Gateway"
-alias table="~/Coding/Tabletop"
-alias timeless="~/Coding/openGL/Timeless"
-alias code="~/Coding"
-alias web="~/Coding/HTML/Projects"
-alias pac="~/Coding/HTML/Projects/Resume/new"
-alias C="~/Coding/C/C"
-alias ednew="~/.new"
+alias -g table="~/Coding/Tabletop"
+alias -g timeless="~/Coding/openGL/Timeless"
+alias -g code="~/Coding"
+alias -g web="~/Coding/HTML/Projects"
+alias -g pac="~/Coding/HTML/Projects/Resume/new"
+alias -g C="~/Coding/C/C"
+alias canvas="~/Coding/Canvas"
+alias -g ednew="~/.new"
 alias gopen="gnome-terminal &"
 alias pacbig="pacman -Qi|awk '/^Installed Size/{print int($4), name} /^Name/{name=$3}'|sort -n"
 alias -g webconf='/etc/httpd/conf/httpd.conf'
 alias -g packer="packer-color"
 alias perli="perl -d -e 1"
+alias :q=exit
+alias aurora=firefox-aurora
 
 #for laptop
 alias -g nd="mount 192.168.0.10:/mnt/data /mnt/data"
@@ -45,6 +48,8 @@ alias xnetdown="ssh -X -p 10042 josh@192.168.0.10"
 path+="$HOME/scripts"
 path+="$HOME/.gem/ruby/1.9.1/bin"
 path+="$HOME/node_modules/.bin"
+path+="/opt/android-sdk/tools/"
+path+="/mnt/data/Applications/android-studio/bin/"
 
 #filter out non-existing paths
 path=($^path(N))
@@ -56,3 +61,4 @@ mkgo(){
 
 #extra env variables
 export WEBSRV=/srv/http
+export EDITOR=vim

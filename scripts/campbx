@@ -1,0 +1,7 @@
+#! /usr/bin/python2
+from campbx import CampBX
+from time import sleep
+c = CampBX()
+while True:
+    print(c.xticker())
+    sleep(3)

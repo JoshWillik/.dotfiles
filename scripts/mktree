@@ -1,0 +1,6 @@
+#! /bin/sh
+
+mkdir -p test/this/{that,then}
+mkdir -p css/{vendor,custom,template}
+mkdir -p js/{vendor,game}
+mkdir -p img/{vendor,sprites,bg}
