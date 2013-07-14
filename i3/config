@@ -116,7 +116,7 @@ bindsym $m+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $m+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $m+Shift+e exec i3-msg exit
+bindsym $m+Shift+Escape exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -169,7 +169,8 @@ bindsym $f+g exec gimp
 bindsym $f+z exec filezilla
 bindsym $f+s exec subl
 bindsym $f+k exec konversation
-bindsym $f+a exec firefox-aurora
+bindsym $f+a exec arduino
+bindsym $f+v exec gvim
 
 #add automatic workspace remenbering for switching
 workspace_auto_back_and_forth yes

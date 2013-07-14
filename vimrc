@@ -57,6 +57,8 @@ let mapleader=","
 noremap <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
 noremap <Leader>r :source $MYVIMRC<CR>
 noremap <Leader>e :sp $MYVIMRC<CR>
+noremap <Leader>m <Esc>:make<Cr><Cr><Cr>
+noremap <Leader>u <Esc>:make upload<Cr><Cr><Cr>
 
 "show the leader key
 set showcmd
@@ -69,6 +71,7 @@ autocmd Filetype html,css inoremap {<CR> {<Esc>o}<Esc>O
 
 "C shortcuts
 ab cic #include <stdio.h>
+ab cpic #include <iostream>
 ab cis #include <string.h>
 ab cia #include <assert.h>
 ab cil #include <stdlib.h>
