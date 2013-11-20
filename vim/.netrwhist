@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/mnt/data/Dropbox/Coding/HTML/Projects/doquickly/app/views/templates'
-let g:netrw_dirhist_2='/mnt/data/Dropbox/Coding/HTML/Projects/WillikHomes/listings'
-let g:netrw_dirhist_3='/mnt/data/Dropbox/Coding/HTML/Projects/timesaves/app/includes'
-let g:netrw_dirhist_4='/mnt/data/Dropbox/Coding/HTML/Projects/timesaves/app/pomodoro'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/mnt/data/Applications/android-studio/sdk/extras/google/google_play_services/samples/plus/src/com/google/android/gms/samples'
+let g:netrw_dirhist_2='/mnt/data/Applications/android-studio/sdk/extras/google/google_play_services/samples/plus/src/com/google/android/gms/samples/plus'
+let g:netrw_dirhist_3='rsync://willikho@willikhomes.com/home/willikho/public_html/'
+let g:netrw_dirhist_4='rsync://willikho@willikhomes.com/home/willikho/'
+let g:netrw_dirhist_5='rsync://willikho@willikhomes.com/home8/willikho/www/'

@@ -1,5 +1,10 @@
-set nocompatible
-"must be first line apparently
+set nocompatible "must be first line apparently
+filetype off
+
+call vundle#rc()
+
+"Vundle bundles
+Bundle 'gmaric/vundle'
 
 "set the minimum height to something reasonable
 set winheight=10
@@ -57,8 +62,7 @@ let mapleader=","
 noremap <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
 noremap <Leader>r :source $MYVIMRC<CR>
 noremap <Leader>e :sp $MYVIMRC<CR>
-noremap <Leader>m <Esc>:make<Cr><Cr><Cr>
-noremap <Leader>u <Esc>:make upload<Cr><Cr><Cr>
+noremap <Leader>m <Esc>:make<Cr>
 
 "show the leader key
 set showcmd
@@ -94,7 +98,7 @@ noremap - <C-W>-
 nnoremap <Space> za
 
 "faster exit from insert mode
-inoremap jj <Esc>
+inoremap jk <Esc>
 "also forces me not to type several lines in one go...
 inoremap <CR> <Esc>
 

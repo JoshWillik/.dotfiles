@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+cd $PWD
+oldfiles=$(ls *.$1 | sed -r 's/(.*)\.'$1'/\1/')
+echo $oldfiles #debugging
+case $1 in
+    m4a)
+        case $2 in
+            ogg)
+                for old in oldfiles do
+                    ffmpeg -i "$old.m4a" \
+                        -acodec vorbis -aq 60 -vn -ac 2 \
+                        -map_meta_data "$old.ogg":"$old.m4a" \
+                        "$old.ogg"
+                done
+                ;;
+            *)
+                echo "I don't know how to do that yet"
+                ;;
+        esac
+    *)
+        echo "I don't know how to do that yet"
+        ;;
+esac
