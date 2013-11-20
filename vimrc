@@ -1,107 +1,59 @@
-set nocompatible "must be first line apparently
+set nocompatible
 filetype off
 
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"Vundle bundles
-Bundle 'gmaric/vundle'
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'vim-scripts/Gundo'
+Bundle 'tpope/vim-fugitive'
+Bundle 'flazz/vim-colorschemes'
 
-"set the minimum height to something reasonable
+"minimum window height
 set winheight=10
 set winminheight=4
 
-"color syntax
+"various customization stuff
+set t_Co=256
 syntax on
-
-"default line numbers
 set number
-
-"set tabs to be spaces, as well as smart indenting
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set softtabstop=4
-
-"setting preferred color scheme
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
-
-colo zenburn
-
-"turn support for file-type specific plug-ins on
-filetype plugin on
-
-"no swp files...
-set nobackup
-
-"default 20, want more
-set history=500
-
-"check spelling
+set background=dark
+set history=1000
 set spell
-
-"match brackets
-set showmatch
-
-"search as I type
 set incsearch
-
-"better completion menu
-set wildmenu
-
-"code folding
 set foldenable
 set foldmethod=indent
+set vb
+set showcmd
+colo distinguished
 
-"remap leader key to be more convenient
+"indenting stuff
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+
+"auto indenting
+imap <C-c> <CR><Esc>O
+
+"auto linting
+let g:syntastic_check_on_open=1
+
+"remapping
 let mapleader=","
-
-"leader shortcuts
-noremap <Leader>h O/**************************<Enter>* Coded by: Josh Vanderwillik<Enter>* Written on: DATE<Enter>* Description: DESC<Enter>****************/
 noremap <Leader>r :source $MYVIMRC<CR>
 noremap <Leader>e :sp $MYVIMRC<CR>
-noremap <Leader>m <Esc>:make<Cr>
-
-"show the leader key
-set showcmd
-
-"tabs for Makefile
-autocmd FileType make setlocal noexpandtab
-
-"auto expanding brackets for css
-autocmd Filetype html,css inoremap {<CR> {<Esc>o}<Esc>O
-
-"C shortcuts
-ab cic #include <stdio.h>
-ab cpic #include <iostream>
-ab cis #include <string.h>
-ab cia #include <assert.h>
-ab cil #include <stdlib.h>
-ab cie #include <errno.h>
-ab cig #include <gtk/gtk.h>
-ab cie #include <errno.h>`
-ab ci #include
-ab de  #define
-ab ii int i = 0;
-ab im int main(int argc, char *argv[])
-
-"coloring tweak
-hi Constant ctermfg=green
-
-"split window resizing
 noremap + <C-W>+
 noremap - <C-W>-
-
-"better folding
-nnoremap <Space> za
-
-"faster exit from insert mode
 inoremap jk <Esc>
-"also forces me not to type several lines in one go...
 inoremap <CR> <Esc>
-
-"disable *#@(*ing bell
-"visual bell
-set vb
