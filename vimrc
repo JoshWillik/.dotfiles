@@ -34,6 +34,7 @@ set foldenable
 set foldmethod=indent
 set vb
 set showcmd
+set encoding=utf-8
 colo distinguished
 
 "indenting stuff
@@ -48,6 +49,9 @@ imap <C-c> <CR><Esc>O
 
 "auto linting
 let g:syntastic_check_on_open=1
+
+"nerdtree arrow fix
+let g:NERDTreeDirArrows=0
 
 "remapping
 let mapleader=","
