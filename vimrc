@@ -60,5 +60,4 @@ noremap <Leader>e :sp $MYVIMRC<CR>
 noremap + <C-W>+
 noremap - <C-W>-
 inoremap jk <Esc>
-inoremap <CR> <Esc>
 nnoremap <Space> za
