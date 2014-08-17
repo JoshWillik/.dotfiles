@@ -4,19 +4,19 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
-Bundle 'vim-scripts/Gundo'
-Bundle 'tpope/vim-fugitive'
-Bundle 'flazz/vim-colorschemes'
+Plugin 'gmarik/vundle'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'msanders/snipmate.vim'
+Plugin 'vim-scripts/Gundo'
+Plugin 'tpope/vim-fugitive'
+Plugin 'flazz/vim-colorschemes'
 
 "minimum window height
 set winheight=10
@@ -36,11 +36,12 @@ set vb
 set showcmd
 set encoding=utf-8
 colo distinguished
+set list
 
 "indenting stuff
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set autoindent
 set smartindent
 
